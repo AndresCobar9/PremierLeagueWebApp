@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+body{
+    background: rgb(255,255,255);
+background: linear-gradient(0deg, rgba(255,255,255,1) 93%, rgba(4,245,255,1) 100%);
+}
+
+.bloque{
+    padding: 2%;
+}
+
+.Logo img{
+    padding-top: 3%;
+    width: 165px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.Logo h1{
+    font-family: 'Oswald', sans-serif;
+    color: black;
+    font-size: 48px;
+    text-align: center;
+}
+.Logo p{
+    font-family: 'Oswald', sans-serif;
+    color: gray;
+    font-size: 30px;
+    text-align: center;
+}
+
+.Logo{
+    
+}

@@ -1,0 +1,58 @@
+<app-nav-bar></app-nav-bar>
+<body>
+<div class="container">
+    <div class="col1">
+        <h1>Premier League 2022/23</h1>
+        <img src="./assets/pngwing.com.png" alt="">
+  
+    </div>
+    <div class="col2">
+        <table id="teams-list">
+        <thead> 
+            <tr>
+                <th></th>
+                <th colspan="2">Team</th>
+                <th>Pl</th>
+                <th>W</th>
+                <th>D</th>
+                <th>L</th>
+                <th>F</th>
+                <th>A</th>
+                <th>GD</th>
+                <th>PTS</th>
+            </tr>
+        </thead>
+        
+        
+            
+        <tbody>
+            <tr *ngFor="let rank of Ranks" id="{{rank.TeamName | titlecase | removewhitespace}}">
+            
+                <td>{{rank.Rank}}</td>
+                <td><img src="{{rank.TeamLogo}}" alt="{{rank.TeamName}}"></td>
+                <td>{{rank.TeamName}}</td>
+                <td>{{rank.Played}}</td>
+                <td>{{rank.Wins}}</td>
+                <td>{{rank.Draws}}</td>
+                <td>{{rank.Loses}}</td>
+                <td>{{rank.GoalsFavor}}</td>
+                <td>{{rank.GoalsAgainst}}</td>
+                <td>{{rank.GoalDiference}}</td>
+                <td>{{rank.Points}}</td>
+            </tr>
+        
+           
+        </tbody>
+        
+        
+        
+        </table>
+        
+    </div>
+    
+</div>
+
+</body>
+
+<app-premier-league-teams></app-premier-league-teams>
+

@@ -1,0 +1,14 @@
+<div class="card">
+    <img [src]=" this.PlayerLogo "  alt="Team Logo">
+    <div class="cardbody">
+      <h5 class="cardtitle">{{this.PlayerName}}</h5>
+      
+      <p class="cardtext">Posicion {{this.PlayerPosition}} <br> Numero de Playera: {{this.PlayerNum}}<br>Edad: {{this.PlayerAge}}</p>
+      <var ></var>
+      <button class="cssbuttons-io-button" (click)="goToPage(this.PlayerID)"> Informacion
+        <div class="icon">
+          <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" ><path d="M0 0h24v24H0z" fill="none"></path><path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path></svg>
+        </div>
+      </button>
+    </div>
+  </div>

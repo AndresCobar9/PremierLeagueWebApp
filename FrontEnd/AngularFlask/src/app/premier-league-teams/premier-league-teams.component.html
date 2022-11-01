@@ -1,0 +1,25 @@
+
+
+<div class = color></div>
+<div class="ClassTeams"></div>
+<div class = "teams">
+  <div class="carddeck">
+  <ul *ngFor="let team of Teams">  
+        <div class="card">
+          <img src="{{team.TeamLogo}}" alt="Team Logo">
+          <div class="cardbody">
+            <h5 class="cardtitle"><b>{{team.TeamName}}</b></h5>
+            
+            <p class="cardtext"> <b>Codigo de equipo:</b> {{team.TeamCode}} <br> <b>Pais:</b> {{team.TeamCountry}} <br> <b>Ciudad:</b> {{team.VenueCity}} </p>
+            <var ></var>
+            <button class="cssbuttons-io-button" href = "" (click)="goToPage(team.TeamID)"  routerLink="/Jugadores"> Informacion
+              <div class="icon">
+                <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path></svg>
+              </div>
+            </button>
+          </div>
+        </div>
+  </ul>
+  </div>
+  </div>
+<div class="Spacer"><div class="footerc">Andres Cobar ©</div></div>

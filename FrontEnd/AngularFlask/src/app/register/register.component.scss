@@ -1,0 +1,28 @@
+body{
+    background-color: gainsboro;
+    height: 100vh;
+    
+  }
+  
+  .card-img-left {
+    width: 35%;
+    /* Link to your background image using in the property below! */
+    background: scroll center url("https://imgs.search.brave.com/hqfgocRkk7PV3TF26g1VyZcfmDEdYhzyih0jzQiaXt8/rs:fit:1200:1080:1/g:ce/aHR0cHM6Ly93d3cu/d2FsbHBhcGVydXAu/Y29tL3VwbG9hZHMv/d2FsbHBhcGVycy8y/MDE4LzAxLzEyLzEx/ODg5MDQvMTRiYmZh/MjExMDU3OWU2YmY5/NGI3NGU1NDI5YzRl/YWUuanBn");
+    background-size: cover;
+    
+  }
+  
+  .btn-login {
+    font-size: 0.9rem;
+    letter-spacing: 0.05rem;
+    padding: 0.75rem 1rem;
+    
+  }
+  
+  .Caja{
+    
+    box-shadow: 0px 0px 30px 3px #38003c;
+  }
+  .container{
+    padding: 5%;
+  }

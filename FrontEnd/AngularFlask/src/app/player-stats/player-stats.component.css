@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+
+
+.HEADER {
+	box-sizing: border-box;
+}
+
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+h2,
+h3,
+a {
+	color: #38003C;
+  font-style: bold;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+
+.logo {
+	margin: 0;
+	font-size: 1.8em;
+  
+}
+.logo img{
+  width: 7vh;
+}
+
+.main-nav {
+	margin-top: 5px;
+
+}
+.logo a,
+.main-nav a {
+	padding: 10px 15px;
+	text-transform: uppercase;
+	text-align: center;
+	display: block;
+}
+
+.main-nav a {
+	color: #34495e;
+	font-size: .99em;
+}
+
+.main-nav a:hover {
+	color: #718daa;
+}
+
+
+
+.header {
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	border: 1px solid #a2a2a2;
+	background-color: #f4f4f4;
+	-webkit-box-shadow: 0px 0px 25px 0px #38003C  ;
+	-moz-box-shadow: 0px 0px 25px 0px #38003C;
+	box-shadow: 0px 0px 30px 0px #38003C;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+  
+}
+
+
+
+
+
+@media (min-width: 769px) {
+	.header,
+	.main-nav {
+		display: flex;
+	}
+	.header {
+		flex-direction: column;
+		align-items: center;
+    	
+	}
+  .header{
+		width: 80%;
+		margin: 0 auto;
+		max-width: 1150px;
+	}
+
+}
+
+@media (min-width: 1025px) {
+	.header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+}
+
+
+
+
+
+
+
+
+.Contenedor{
+    
+    font-family: 'Oswald', sans-serif;
+     padding: 3%;
+ }
+.Fondo{
+    background-image: linear-gradient(to left top, #e90052, #be0058, #910056, #63004c, #38003c);}
+.Jugador{
+    display: flex;
+    justify-content: space-between;
+    height: 30% ;
+    padding: 30px;
+    background-color: white;
+    box-shadow: 10px 5px 20px .7px rgba(14, 14, 14, 0.514);
+}
+.Jugador img{
+    height: 160px;
+}
+.InfoP{
+    padding-top: 35px;
+    
+   text-align: center;
+}
+.InfoP h1{
+    font-size: 50px;
+    font-size: bold;
+}
+.Team img{
+    
+    width: 130px;
+    height: 130px;
+    
+    align-content: center;
+    
+}
+
+.TImg{
+    padding-left: 23px;
+}
+.Team{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: right;
+    font-size: 10px;
+}
+.Team h1{
+    font-size: 25px;
+}
+
+.Ligas{
+    padding: 3%;
+    font-family: 'Oswald', sans-serif;
+    
+}
+.pepe{
+    padding-bottom: 20px;
+}
+.Liga{
+    box-shadow: 10px 5px 20px .7px rgba(14, 14, 14, 0.514);
+    background-color: white;
+    padding: 25px;
+    height: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.ImaLig{
+    display: flex;
+    width: 200px;
+}
+.Logo{
+    height: 200px;
+}
+.Logo h1{
+    padding-top: 8px;
+    font-size: 25px;
+    width: 200px;
+    text-align: center;
+}
+.Logo img{
+    padding-left: 5px;
+    max-width: 150px;
+    
+}
+
+.Flag img{
+    height: 20px;
+}
+.InfoL{
+    display: flex;
+    width: 250px;
+}
+.InfoL h1{
+    font-size: 20px;
+}
+.Tarjetas{
+    display: flex;
+    text-align: center;
+}
+.cardY2{
+    display: flex;
+}
+.cardR{
+    height: 50px;
+    width: 30px;
+    background-color: red;
+    text-align: center;
+    
+}
+.TarY h1{
+    text-align: center;
+    
+}
+.Spacer{
+    width: 2px;
+}
+.cardY{
+    height: 50px;
+    width: 30px;
+    
+    background-color: yellow;
+    
+}
+.cardYY{
+    height: 50px;
+    width: 15px;
+    background-color: yellow;
+}

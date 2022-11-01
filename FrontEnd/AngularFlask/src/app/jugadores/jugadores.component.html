@@ -1,0 +1,31 @@
+<app-nav-bar></app-nav-bar>
+<app-lineup></app-lineup>
+
+<div class ="Barra">
+  <div class = "titulo"> 
+    
+    <h1>JUGADORES</h1> 
+  
+      <div class="Buscador">
+<div class="input-group rounded">
+  <input type="search" class="form-control rounded" placeholder="Buscar..." [(ngModel)]="filterteam"> 
+
+</div>
+</div>
+    
+  
+</div>
+
+  
+
+<div class="ClassTeams"></div>
+<div class = "teams">
+  <div class="carddeck">
+  <ul *ngFor="let player of Players | filter:filterteam ">  
+    <div class="{{player.PlayerName}}">
+     <app-card [PlayerName]="player.PlayerName" [PlayerLogo]="player.Photo"   [PlayerPosition] = "player.PlayerPosition" [PlayerNum] = "player.PlayerNum" [PlayerAge]="player.PlayerAge" [PlayerID]="player.PlayerID"></app-card>
+      </div>
+  </ul>
+  </div>
+  </div>
+  

@@ -1,0 +1,14 @@
+<body>
+  
+
+<header class="header">
+    <h1 class="logo"><a routerLink="/Dashboard"><img src="/assets/latest.png" alt="Premier League Logo">Premier League</a></h1>
+  <ul class="main-nav">
+      <li *ngIf="log.isLoggedIn()"><a routerLink="/Dashboard">Home</a></li>
+      <li *ngIf="log.isLoggedIn()"><a mat-button (click)="log.logout()">logout</a></li>
+      <li><a mat-button>Bienvenido {{ log.getUserInfo("first_name") }}</a></li>
+  </ul>
+</header> 
+<br>
+<br>
+</body>

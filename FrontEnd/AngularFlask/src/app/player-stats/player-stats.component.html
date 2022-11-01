@@ -1,0 +1,83 @@
+
+<div class="Fondo">
+<div class="Total">
+<div class="HEADER">
+
+    <div class="body">
+  
+
+        <header class="header">
+            <h1 class="logo"><a routerLink="/Dashboard"><img src="/assets/latest.png" alt="Premier League Logo">Premier League</a></h1>
+          <ul class="main-nav">
+              <li *ngIf="log.isLoggedIn()"><a routerLink="/Dashboard">Home</a></li>
+              <li *ngIf="log.isLoggedIn()"><a mat-button (click)="log.logout()">logout</a></li>
+              <li><a mat-button>Bienvenido {{ log.getUserInfo("first_name") }}</a></li>
+          </ul>
+        </header> 
+        <br>
+        <br>
+    </div>
+        
+
+    </div>
+    
+<div class="Contenedor">
+<div class="Jugador" *ngFor="let Jugador of Stat.Jugador">
+    <img src="{{Jugador.Photo}}" alt="">
+    <div class="InfoP">
+        <h1>
+            {{Jugador.NameTitle}}
+        </h1>
+        <h2>
+            {{Jugador.Nationality}}
+        </h2>
+    </div>
+    <div class="Team">
+        <div class="TImg">
+        <img src="{{Jugador.TeamLogo}}" alt="">
+        </div>
+        <h1>{{Jugador.Team}}</h1>
+    </div>
+</div>
+</div>
+
+
+<div class="Ligas">
+    
+        <div class="pepe" *ngFor="let liga of Stat.Ligas">
+        <div class="Liga">
+            <div class="ImaLig">
+            <div class="Logo"><img src="{{liga.Logo}}" alt=""><h1>{{liga.League}}</h1></div>
+            
+            <div class="Flag"><img src="{{liga.Flag}}" alt=""></div>
+            </div>
+
+            <div class="Stats">
+                <div class="InfoL">
+                    <h1>
+                        <br>
+                        Minutos Jugados: {{liga.Minutes}}
+                        
+                        <br>
+                        Partidos Jugados: {{liga.Appearences}}<br>
+                        Tiros Ralizados: {{liga.Shots}} <br>
+                        Pases Realizados: {{liga.Pases}}<br>
+                        Goles anotados: {{liga.Goals}}<br>
+                    Puntuacion Media: {{liga.Rating}}</h1>
+                </div>
+                
+
+            </div>
+            <div class="Tarjetas">
+                <div class="TarY"><div class="cardY"></div><h1>{{liga.Yellow}}</h1></div>
+                <div class="Spacer"></div><div class="Spacer"></div><div class="Spacer"></div><div class="Spacer"></div><div class="Spacer"></div><div class="Spacer"></div><div class="Spacer"></div><div class="Spacer"></div><div class="Spacer"></div><div class="Spacer"></div><div class="Spacer"></div><div class="Spacer"></div><div class="Spacer"></div>
+                <div class="TarY"><div class="cardY2"> <div class="cardY"><p>1</p></div> <div class="Spacer"></div> <div class="cardY"><p>2</p></div> </div><h1>{{liga.YellowRed}}</h1></div>
+                <div class="Spacer"></div><div class="Spacer"></div><div class="Spacer"></div><div class="Spacer"></div><div class="Spacer"></div><div class="Spacer"></div><div class="Spacer"></div><div class="Spacer"></div><div class="Spacer"></div><div class="Spacer"></div><div class="Spacer"></div><div class="Spacer"></div><div class="Spacer"></div>
+                <div class="TarY"><div class="cardR"></div><h1>{{liga.Red}}</h1></div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+</div>
+</div>

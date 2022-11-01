@@ -1,0 +1,127 @@
+.color{
+    background-color: #E90052; 
+       padding-top: 20px;
+       
+    }
+    .ClassTeams{
+        display:flex;
+        
+        max-height: 670px;
+        
+    }
+    .cardtitle{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .carddeck{
+        overflow-y: auto;
+        display: flex;
+        background-image: linear-gradient(to bottom, #e90052, #bc0054, #8e004e, #610042, #380030);
+        padding-top: 1%;
+        padding-bottom: 30px;
+    }
+    
+    .carddeck::-webkit-scrollbar {
+        height: 2em;
+      }
+       
+      .carddeck::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 1000px black;
+      }
+       
+      .carddeck::-webkit-scrollbar-thumb {
+        background-color: aqua;
+      }
+    
+    
+    .card{
+        padding:2%;
+        width: 271px;
+        
+    }
+    .cardbody{
+        display:flex ;
+        flex-direction: column;
+        
+    }
+    .card img{
+        align-content: center;
+        padding: 15%;
+    }
+    
+    .cardbody button{
+        width: 271;
+        border: 0px;
+    }
+    .cssbuttons-io-button {
+        background: black;
+        color: white;
+        font-family: inherit;
+        padding: 0.35em;
+        padding-left: 1.2em;
+        font-size: 17px;
+        font-weight: 500;
+        border-radius: 0.9em;
+        border: none;
+        letter-spacing: 0.05em;
+        display: flex;
+        align-items: center;
+        
+        overflow: hidden;
+        position: relative;
+        height: 2.8em;
+        padding-right: 3.3em;
+       }
+       
+       .cssbuttons-io-button .icon {
+        background: white;
+        margin-left: 1em;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 2.2em;
+        width: 2.2em;
+        border-radius: 0.7em;
+        
+        right: 0.3em;
+        transition: all 0.3s;
+       }
+       
+       .cssbuttons-io-button:hover .icon {
+        width: calc(100% - 0.6em);
+       }
+       
+       .cssbuttons-io-button .icon svg {
+        width: 1.1em;
+        transition: transform 0.3s;
+        color: #7b52b9;
+       }
+       
+       .cssbuttons-io-button:hover .icon svg {
+        transform: translateX(0.1em);
+       }
+       
+       .cssbuttons-io-button:active .icon {
+        transform: scale(0.95);
+       }
+       
+    .Spacer{
+        background-color: black;
+        display: flex;
+        height: 40px;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        color: white;
+    }
+
+    .footerc{
+        font-size: 20px;
+        color: white;
+       
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
